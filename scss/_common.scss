@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@600&display=swap');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.5;
+	color: $blackColor;
+
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+
+[class*="__container"] {
+	max-width: $containerWidth;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 38px;
+	@media (max-width: $mobileSmall) {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	// .title_main
+	&_main {
+		font-weight: 800;
+	}
+
+	// .title_minor
+	&_minor {
+		font-weight: 700;
+	}
+
+	// .title_review
+	&_review {
+		font-weight: 600;
+		@media (max-width: $mobileMedium) {
+			font-size: 30px;
+		}
+	}
+
+	span {
+		text-transform: uppercase;
+	}
+}
+
+.btn {
+	display: inline-block;
+	color: $yellowColor;
+	background-color: $whiteColor;
+	border: 1px solid $mainBtnBorderColor;
+	border-radius: 5px;
+	font-size: 11px;
+	transition: .3s, background-color 1s;
+	padding: 8px 14px;
+
+	&:hover {
+		background-color: $mainBtnBorderColor;
+		color: $whiteColor;
+	}
+
+	// .btn_invert
+	&_invert {
+		color: $whiteColor;
+		background-color: $yellowColor;
+		border-color: $minorBtnBorderColor;
+
+		&:hover {
+			background-color: $whiteColor;
+			color: $yellowColor;
+		}
+	}
+
+	&:active {
+		transform: scale(.95);
+	}
+}
+
+.page {
+	flex: 1 1 auto;
+	// .page__home
+	&__home {
+	}
+
+	// .page__about-us
+	&__about-us {
+	}
+
+	// .page_menu
+	&_menu {
+	}
+
+	// .page__service
+	&__service {
+	}
+
+	// .page__reviews
+	&__reviews {
+	}
+
+	// .page__call-back
+	&__call-back {
+	}
+
+}

@@ -1,0 +1,22 @@
+$containerWidth: 810px;
+
+/*
+$pc: $containerWidth; // ПК, ноутбуки, деякі планшети у горизонтальному положенні
+$tablet: 991.98px; // Планшети, деякі телефони в горизонтальному положенні
+*/
+
+$mobile: 767.98px; // Телефони L
+$mobileMedium: 639.98px;
+$mobileSmall: 479.98px; // Телефони S
+
+
+// Colors ----------------------
+$yellowColor: #F8B101;
+$mainBtnBorderColor: #C28D0A;
+$minorBtnBorderColor: #F5C449;
+$paleWhiteColor: #D5D5D5;
+$whiteColor: #FFF;
+$blackColor: #000;
+$footerBg: #190E04;
+$footerYellowColor: #FCCC56;
+$footerTextColor: #CECDC9;
